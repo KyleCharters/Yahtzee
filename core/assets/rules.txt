@@ -1,0 +1,117 @@
+Objective
+
+Roll dice for scoring combinations, and get the highest total score.
+
+Game Summary
+
+On each turn, roll the dice up to 3 times to get the highest scoring combination for one of 13 categories. After you finish rolling, you must place a score in one of the 13 category boxes. The game ends when all players have filled 13 boxes. Scores are totaled. The highest total wins.
+
+
+How to Play
+
+On your turn, you may roll the dice up to 3 times, although you may stop and score after your fist/second roll. To roll the dice, click the "Roll" button in the top right.
+
+First Roll:
+Roll the dice, Click on the dice to "Lock" it, which menas it will not be rolled the next time you click "Roll". You may stop and score now, or roll again.
+
+Second Roll:
+To not reroll a die, click a "Locked" die to "Unlock" it. You do not need to declare which combination you are rolling for, you may change your mind after any roll. You may stop and score after your second roll, or "Lock" any dice you want to keep then roll a third time.
+
+Third/Final Roll:
+After your third roll, you must select a score on the board, to do this you can select your score in any section. 
+
+
+Ending a game
+
+Once each player has finished all 13 sections, the game ends, their total is shown at the top
+
+
+Scoring
+
+Left Section:
+The left section is the sum of all the dice with the same number.
+
+Example:
+[3]  [3]  [3]  [2]  [4]
+
+You can score 9 in the Threes section, 2 in the Twos section, or 4 in the Fours section.
+
+
+
+
+3 of a Kind:
+If the dice include 3 or more of the same number, the score in this section will be the sum of all the dice.
+
+Example:
+[5]  [5]  [5]  [2]  [1]
+
+You can score 18 points in the 3 of a kind section.
+
+
+
+
+4 of a Kind:
+If the dice include 4 or more of the same number, the score in this section will be the sum of all the dice.
+
+Example:
+[2]  [2]  [2]  [2]  [6]
+
+You can score 13 points in the 4 of a kind section.
+
+
+
+
+Full House:
+If the dice contain three of one number, and two of another, the score in this section will always be 25
+
+Example:
+[2]  [2]  [2]  [6]  [6]
+
+You can score 25 points in the Full House section.
+
+
+
+
+Small Straight:
+If the dice show any sequence of 4 consecutive numbers, the score in this section will always be 30 points.
+
+Example:
+[1]  [2]  [3]  [4]  [Any]
+[2]  [3]  [4]  [5]  [Any]
+[3]  [4]  [5]  [6]  [Any]
+
+You can score 30 points in the Small Straight section.
+
+
+
+
+Large Straight:
+If the dice show any sequence of 5 consecutive numbers, the score in this section will always be 40 points.
+
+Example:
+[1]  [2]  [3]  [4]  [5]
+[2]  [3]  [4]  [5]  [6]
+
+You can score 40 points in the Large Straight section.
+
+
+
+
+Yahtzee:
+If all five dice are of the same number (5 of a kind), the score in this section is 50 points.
+
+Example:
+[1]  [1]  [1]  [1]  [1]
+
+You can score 50 points in the Yahtzee section.
+
+
+
+
+Chance:
+Chance is the sum of any dice.
+
+Example:
+[5]  [5]  [2]  [1]  [3]
+
+You can score 16 points in the chance section.

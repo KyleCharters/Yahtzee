@@ -1,0 +1,21 @@
+{
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	default: { down: default-button-down, up: default-button },
+	toggle: { down: default-button-down, checked: default-button-down, up: default-button }
+},
+com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
+	default: { down: default-button-down, font: default-font, up: default-button, font: default-font },
+	toggle: { down: default-button-down, font: default-font, up: default-button, font: default-font, checked: default-button-down, font: default-font }
+},
+com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle: {
+	default: { vScroll: default-scroll, hScrollKnob: default-button-large, background: default-rect, hScroll: default-scroll, vScrollKnob: default-button-large }
+},
+com.badlogic.gdx.scenes.scene2d.ui.SplitPane$SplitPaneStyle: {
+	default-vertical: { handle: default-splitpane-vertical },
+	default-horizontal: { handle: default-splitpane }
+},
+com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+	default: { font: default-font },
+	score: { font: score-font }
+},
+}
