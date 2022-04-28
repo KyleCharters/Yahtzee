@@ -24,7 +24,7 @@ public class Instructions implements GameState{
 		stage = new Stage(new ScreenViewport());
 		
 		//Load all text from the rules.txt file in assets
-		Label info = new Label("\n" + Gdx.files.internal("assets/rules.txt").readString() + "\n", Yahtzee.skin);
+		Label info = new Label("\n" + Gdx.files.internal("rules.txt").readString() + "\n", Yahtzee.skin);
 		info.setWrap(true);
 		info.setAlignment(Align.center);
 		ScrollPane scrollPane = new ScrollPane(info, Yahtzee.skin);

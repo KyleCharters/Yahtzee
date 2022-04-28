@@ -34,7 +34,7 @@ public class Yahtzee extends ApplicationAdapter{
 		
 		
 		//Create all fonts
-		FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("assets/Revue.ttf"));
+		FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("Revue.ttf"));
 		FreeTypeFontParameter parameter = new FreeTypeFontParameter();
 		parameter.size = 20;
 		parameter.spaceY = 10;
@@ -52,13 +52,13 @@ public class Yahtzee extends ApplicationAdapter{
 		generator.dispose();
 		
 		//Create skin
-		skin.addRegions(new TextureAtlas(Gdx.files.internal("assets/uiskin.atlas")));
-		skin.load(Gdx.files.internal("assets/uiskin.json"));
+		skin.addRegions(new TextureAtlas(Gdx.files.internal("uiskin.atlas")));
+		skin.load(Gdx.files.internal("uiskin.json"));
 		
 		//Load dice model
 		UBJsonReader jsonReader = new UBJsonReader();
 		G3dModelLoader loader = new G3dModelLoader(jsonReader);
-		dieModel = loader.loadModel(Gdx.files.getFileHandle("assets/dice.g3db", FileType.Internal));
+		dieModel = loader.loadModel(Gdx.files.getFileHandle("dice.g3db", FileType.Internal));
 		
 		//Load the game state manager
 		GameState[] states = {new MainMenu(), new Instructions(), new PlayerSelect(), new Play()};

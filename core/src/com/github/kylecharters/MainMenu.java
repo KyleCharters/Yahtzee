@@ -50,13 +50,13 @@ public class MainMenu implements GameState{
 		
 		//Set lighting for the cube
 		environment = new Environment();
-		environment.set(new ColorAttribute(ColorAttribute.AmbientLight, 0.4f, 0.4f, 0.4f, 1f));
-		environment.add(new DirectionalLight().set(0.8f, 0.8f, 0.8f, -1f, -0.8f, -1f));
+		environment.set(new ColorAttribute(ColorAttribute.AmbientLight, 0.1f, 0.1f, 0.1f, 0.1f));
+		environment.add(new DirectionalLight().set(0.5f, 0.5f, 0.5f, -1f, -0.8f, -0.5f));
 		
 		stage = new Stage(new ScreenViewport());
 		
 		//Load the title image
-		title = new Image(new Texture(Gdx.files.internal("assets/Yahtzee.png")));
+		title = new Image(new Texture(Gdx.files.internal("Yahtzee.png")));
 		title.setY(Gdx.graphics.getHeight() - 300);
 		stage.addActor(title);
 		

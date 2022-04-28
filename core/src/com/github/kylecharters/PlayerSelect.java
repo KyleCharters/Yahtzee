@@ -28,7 +28,7 @@ public class PlayerSelect implements GameState{
 		stage = new Stage(new ScreenViewport());
 		
 		//Load the title image
-		title = new Image(new Texture(Gdx.files.internal("assets/Yahtzee.png")));
+		title = new Image(new Texture(Gdx.files.internal("Yahtzee.png")));
 		title.setY(Gdx.graphics.getHeight() - 300);
 		stage.addActor(title);
 		

@@ -169,22 +169,19 @@ public class Play implements GameState{
 	public class ScoreEntry{		
 		//UI variables
 		public Label label;
-		public LabelStyle solid, light;
 		
 		//Game variables
 		public int score;
 		public boolean locked;
 		public Player player;
 		
-		public ScoreEntry(final LabelStyle solid, final LabelStyle light, final Player player){
+		public ScoreEntry(final Player player){
 			score = 0;
 			locked = false;
 			
-			this.solid = solid;
-			this.light = light;
 			this.player = player;
 			
-			label = new Label(String.valueOf(score), light);
+			label = new Label(String.valueOf(score), player.light);
 			label.setAlignment(Align.center);
 			
 			//When the user clicks on the score, lock it in, and change turn
@@ -193,7 +190,7 @@ public class Play implements GameState{
 					//Only allow a press if it is the correnct player's turn, and they have rolled at least once
 					if(player.turn && player.rolls > 0 && !locked){
 						locked = true;
-						label.setStyle(solid);
+						label.setStyle(player.solid);
 						changeTurn();
 					}
 					return true;
@@ -252,19 +249,19 @@ public class Play implements GameState{
 			total.setAlignment(Align.center);
 			
 			//Create new score entry for each option
-			one = new ScoreEntry(solid, light, this);
-			two = new ScoreEntry(solid, light, this);
-			three = new ScoreEntry(solid, light, this);
-			four = new ScoreEntry(solid, light, this);
-			five = new ScoreEntry(solid, light, this);
-			six = new ScoreEntry(solid, light, this);
-			threeOfKind = new ScoreEntry(solid, light, this);
-			fourOfKind = new ScoreEntry(solid, light, this);
-			fullHouse = new ScoreEntry(solid, light, this);
-			smallStraight = new ScoreEntry(solid, light, this);
-			largeStraight = new ScoreEntry(solid, light, this);
-			yahtzee = new ScoreEntry(solid, light, this);
-			chance = new ScoreEntry(solid, light, this);
+			one = new ScoreEntry(this);
+			two = new ScoreEntry(this);
+			three = new ScoreEntry(this);
+			four = new ScoreEntry(this);
+			five = new ScoreEntry(this);
+			six = new ScoreEntry(this);
+			threeOfKind = new ScoreEntry(this);
+			fourOfKind = new ScoreEntry(this);
+			fullHouse = new ScoreEntry(this);
+			smallStraight = new ScoreEntry(this);
+			largeStraight = new ScoreEntry(this);
+			yahtzee = new ScoreEntry(this);
+			chance = new ScoreEntry(this);
 		}
 		
 		/**
@@ -427,11 +424,11 @@ public class Play implements GameState{
 		camera.update();
 		
 		environment = new Environment();
-		environment.set(new ColorAttribute(ColorAttribute.AmbientLight, 0.4f, 0.4f, 0.4f, 1f));
-		environment.add(new DirectionalLight().set(0.8f, 0.8f, 0.8f, -1f, -0.8f, -1f));
+		environment.set(new ColorAttribute(ColorAttribute.AmbientLight, 0.1f, 0.1f, 0.1f, 0.1f));
+		environment.add(new DirectionalLight().set(0.5f, 0.5f, 0.5f, -1f, -0.8f, -0.5f));
 		
 		random = new Random();
-		lockTexture = new Texture(Gdx.files.internal("assets/Lock.png"));
+		lockTexture = new Texture(Gdx.files.internal("Lock.png"));
 		//Add 5 dice to the screen
 		dice = new Array<Die>();
 		dice.add(new Die(-5.5f));
